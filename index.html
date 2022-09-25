@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Clock</title>
+</head>
+<body>
+    <div class="clock">
+        <div class="arrow hours" id="hour_arrow"></div>
+        <div class="arrow minutes" id="minute_arrow"></div>
+        <div class="arrow seconds" id="second_arrow"></div>
+        <div class="row">
+            <div class="hour">3</div>
+            <div class="column">
+                <div class="hour">12</div>
+                <div class="center"></div>
+                <div class="hour">6</div>
+            </div>
+            <div class="hour">9</div>
+        </div>
+    </div>
+    <div class="controls">
+        <select id="speed-select" size="1" name="tick_time_ms">
+            <option value="X2" selected>X2</option>
+            <option value="X4">X4</option>
+            <option value="X16">X16</option>
+            <option value="X100">X100</option>
+            <option value="NORMAL">Normal</option>
+        </select>
+        <button id="speed-btn" class="btn">Set speed</button>
+        <button id="stop-btn" class="btn">Stop</button>
+        <button id="sync-btn" class="btn">Synchronize</button>
+    </div>
+    <div class="digital">
+        <span id="digital-hours" class="number"></span>
+        <span id="digital-dots" class="blink">:</span>
+        <span id="digital-minutes" class="number"></span>
+        <span id="digital-dots" class="blink">:</span>
+        <span id="digital-seconds" class="number"></span>
+    </div>
+    <script src="/script.js" defer></script>
+</body>
+</html>
