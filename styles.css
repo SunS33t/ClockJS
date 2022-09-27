@@ -54,11 +54,10 @@
     position: fixed;
     transform-origin: bottom center;
     border-radius: 100% 100% 0 0;
-    /*transition: 1s ease-in-out;*/
 }
 
 .hours{
-    margin-inline: 192px;
+    margin-inline: 194px;
     width: 12px;
     height: 140px;
     margin-top: 60px;
@@ -98,6 +97,17 @@
     width: 150px;
     height: 30px;
     font-size: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgb(216, 216, 216);
+}
+
+.speed-select {
+    cursor: pointer;
+    border-radius: 20px;
 }
 
 .number{

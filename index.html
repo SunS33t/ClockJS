@@ -23,12 +23,14 @@
         </div>
     </div>
     <div class="controls">
-        <select id="speed-select" size="1" name="tick_time_ms">
+        <select id="speed-select" class="speed-select" size="1" name="tick_time_ms">
             <option value="X2" selected>X2</option>
             <option value="X4">X4</option>
             <option value="X16">X16</option>
             <option value="X100">X100</option>
             <option value="NORMAL">Normal</option>
+            <option value="HALF">/2</option>
+            <option value="QUADRO">/4</option>
         </select>
         <button id="speed-btn" class="btn">Set speed</button>
         <button id="stop-btn" class="btn">Stop</button>
@@ -41,6 +43,6 @@
         <span id="digital-dots" class="blink">:</span>
         <span id="digital-seconds" class="number"></span>
     </div>
-    <script src="/script.js" defer></script>
+    <script src="/script.js"></script>
 </body>
 </html>
