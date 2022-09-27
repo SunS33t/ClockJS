@@ -48,7 +48,7 @@ syncBtn.onclick = function(){
 
     setTimeout(()=>{
         sec_arrow.style.transition = min_arrow.style.transition = hour_arrow.style.transition ='none';
-    },1000);
+    }, 1000);
 }
 
 //#endregion 
