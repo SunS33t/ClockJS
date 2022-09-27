@@ -77,4 +77,4 @@ var timer = function() {
 //#endregion
 
 setTimeout(timer, tick_time_ms) 
-updateDigitalClock() //for instant digital clock render
+updateDigitalClock() 
