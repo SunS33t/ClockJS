@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" rel="stylesheet"/>
     <title>Clock</title>
 </head>
 <body>
     <header class="header">
         <div class="title">
-            TimeressS
+            TimereS<span class="blue">s</span><span  class="red">s</span>
         </div>
         <label class="switch">
             <input type="checkbox">
@@ -34,17 +35,17 @@
     </div>
     <div class="controls">
         <select id="speed-select" class="speed-select" size="1" name="tick_time_ms">
-            <option value="X2" selected>X2</option>
-            <option value="X4">X4</option>
-            <option value="X16">X16</option>
-            <option value="X100">X100</option>
-            <option value="NORMAL">Normal</option>
-            <option value="HALF">HALF</option>
-            <option value="QUADRO">QUAD</option>
+            <option value="X2" selected>&#xf4ba; X2</option>
+            <option value="X4">&#xf6be; X4</option>
+            <option value="X16">&#Xf6f0; X16</option>
+            <option value="X100">&#xf6d5; X100</option>
+            <option value="NORMAL">&#xf183; Normal</option>
+            <option value="HALF">&#xf52e; HALF</option>
+            <option value="QUADRO">&#xe599; QUAD</option>
         </select>
-        <button id="speed-btn" class="btn">Set speed</button>
-        <button id="stop-btn" class="btn">Stop</button>
-        <button id="sync-btn" class="btn">Synchronize</button>
+        <button id="speed-btn" class="btn"><i class="fa-solid fa-gauge-high" style="color:dimgray"></i> Set speed</button>
+        <button id="stop-btn" class="btn"><i class="fa-solid fa-stopwatch" style="color:indianred"></i> Stop</button>
+        <button id="sync-btn" class="btn"><i class="fa-sharp fa-solid fa-arrows-rotate" style="color:darkseagreen"></i> Synchronize</button>
     </div>
     <div class="digital">
         <span id="digital-hours" class="number"></span>
@@ -55,5 +56,6 @@
     </div>
 </div>
     <script src="/script.js"></script>
+    <script src="https://kit.fontawesome.com/19310f0885.js" crossorigin="anonymous"></script>
 </body>
 </html>

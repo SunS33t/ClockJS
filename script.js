@@ -65,11 +65,12 @@ function updateDigitalClock() {
 
 var timer = function() {
     if(!stop){
-        tick++
-        sec_arrow.style.transform = 'rotate(' + (tick * second_step)%360 +'deg)'
-        min_arrow.style.transform = 'rotate(' + (tick * minutes_step)%360 +'deg)'
-        hour_arrow.style.transform = 'rotate(' + (tick * hours_step)%360 +'deg)'       
+        tick++;
+        sec_arrow.style.transform = 'rotate(' + (tick * second_step) % 360 +'deg)'
+        min_arrow.style.transform = 'rotate(' + (tick * minutes_step) % 360 +'deg)'
+        hour_arrow.style.transform = 'rotate(' + (tick * hours_step) % 360 +'deg)'       
         updateDigitalClock()
+        tick %= 60*60*24
     }
     setTimeout(timer, tick_time_ms)
 }
